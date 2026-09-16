@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +14,14 @@ html, body {
     overflow: hidden;
     background: black;
 }
-
-#frame {
-    width: 2000px;
-    height: 2000px;
-    border: none;
-}
 </style>
 
 <script>
-setInterval(function(){
-    document.getElementById("frame").src = document.getElementById("frame").src;
+const URL = "https://www.coinglass.com/pro/futures/LiquidationHeatMapModel3";
+
+// Reload every 6 minutes
+setTimeout(function() {
+    window.location.replace(URL);
 }, 360000);
 </script>
 
@@ -31,10 +29,10 @@ setInterval(function(){
 
 <body>
 
-<iframe
-id="frame"
-src="https://www.coinglass.com/pro/futures/LiquidationHeatMapNew?coin=BTC&type=symbol">
-</iframe>
+<script>
+window.location.replace(URL);
+</script>
 
 </body>
 </html>
+```
